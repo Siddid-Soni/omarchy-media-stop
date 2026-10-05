@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.siddid-soni.media-stop",
+  "name": "Media Stop",
+  "version": "1.0.0",
+  "author": "Siddid Soni",
+  "license": "MIT",
+  "description": "Omarchy's media service and bar widget with a Windows-style Stop key: stopping a player hands media-key control to the next one, including the next media tab in Chromium browsers.",
+  "homepage": "https://github.com/Siddid-Soni/omarchy-media-stop",
+  "kinds": [
+    "service",
+    "bar-widget"
+  ],
+  "keepLoaded": true,
+  "entryPoints": {
+    "service": "Service.qml",
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Media Stop",
+    "description": "MPRIS now-playing with playback controls",
+    "category": "Media",
+    "allowMultiple": false,
+    "defaultSection": "center"
+  },
+  "omarchy": {
+    "clonedFrom": "omarchy.media"
+  }
+}
